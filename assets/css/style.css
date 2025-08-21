@@ -30,12 +30,6 @@ h1 {
     color: #080808;
 }
 
-h1 {
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: #080808;
-}
-
 .input-group {
     margin-bottom: 15px;
     text-align: left;
@@ -63,6 +57,11 @@ button {
     background-color: #080808;
     color: #faebd7;
     font-size: 13px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666666;
 }
 
 #resultado {
