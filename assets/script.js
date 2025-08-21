@@ -1,8 +1,8 @@
 document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    let nomeHeroi = prompt("Digite o nome do herói:");
-    let xpHeroi = parseInt(prompt("Digite o XP do herói:"));
+    let nomeHeroi = document.getElementById("nomeHeroi").value;
+    let xpHeroi = parseInt(document.getElementById("xpHeroi").value);
     let nivelHeroi = "";
 
     if (xpHeroi <= 1000){
