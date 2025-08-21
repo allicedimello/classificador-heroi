@@ -3,6 +3,12 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     let nomeHeroi = document.getElementById("nomeHeroi").value;
     let xpHeroi = parseInt(document.getElementById("xpHeroi").value);
+
+    if (!nomeHeroi || isNaN(xpHeroi)) {
+        document.getElementById("resultado").textContent = "Por favor, preencha ambos os campos corretamente.";
+        return;
+    }
+
     let nivelHeroi = "";
 
     if (xpHeroi <= 1000){
@@ -21,8 +27,6 @@ document.getElementById("form").addEventListener("submit", function(event) {
         nivelHeroi = "Imortal";
     } else if (xpHeroi >= 10001){
         nivelHeroi = "Radiante";
-    } else {
-        parseInt(prompt("Valor inválido! Digite o XP do herói:"));
     }
 
     document.getElementById("resultado").textContent = `O Herói de nome ${nomeHeroi} está no nível ${nivelHeroi}`;
