@@ -27,6 +27,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     document.getElementById("resultado").textContent = `O Herói de nome ${nomeHeroi} está no nível ${nivelHeroi}`;
 
-    document.getElementById("form").reset();
-
+    setTimeout(function() {
+        document.getElementById("form").reset();
+    }, 500);
 });
